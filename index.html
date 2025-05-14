@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>UrbanGlam</title>
+</head>
+
+<body>
+  <MARQUEE>
+    <h4 >FREE SHIPPING ALL OVER INDIA <span class="gap"></span>COD AVAILABLE</h4>
+  </MARQUEE>
+  <header>
+  
+    <div class="logo-title">
+      <img src="./Assets/bg-1.png" alt="Logo" />
+      <h1>UrbanGlam</h1>
+    </div>
+
+    <nav>
+      <ul class="navbar">
+        <li><a href="#" onclick="showHome()">Home</a></li>
+        <li><a href="#" onclick="showTrending()">Trending</a></li>
+        <li class="dropdown">
+          <a href="#">Women</a>
+          <ul class="dropdown-menu">
+            <li><a href="#" onclick="showCategory('sunglass')">Sunglasses</a></li>
+            <li><a href="#" onclick="showCategory('earring')">Earrings</a></li>
+            <li><a href="#" onclick="showCategory('bracelet')">Bracelets</a></li>
+            <li><a href="#" onclick="showCategory('necklace')">Necklaces</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <!-- <li><a href="login.html">Login</a></li> -->
+        <li id="user-info"></li>
+        <li><a href="cart.html"><img src="./Assets/cart.png" alt="cart" class="logooo"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="slider-wrapper">
+    <div class="slider" id="imageSlider">
+      <!-- JS will insert one image and update it every 2s -->
+    </div>
+  </div>
+
+  <!-- Trending now -->
+  <div class="products-container">
+    <h1 class="page-title">Trending Now</h1>
+    <div class="products-container" id="trending-container"></div>
+  </div>
+
+  <main>
+    <section id="product-list" class="product-grid"></section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: support@urbanglam.com</p>
+        <p>Phone: +91-9876543210</p>
+      </div>
+      <div class="about-brand">
+        <h3>About the Brand</h3>
+        <p>
+          Accessorize is a one-stop destination for trendy bags, jewellery, hair 
+          and kids accessories to complete every ensemble with panache.
+        </p>
+      </div>
+      <div class="follow">
+
+      </div>
+    </div>
+  <script src="script.js"></script>
+</footer>
+</body>
+
+</html>

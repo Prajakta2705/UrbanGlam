@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invoice - UrbanGlam</title>
+  <link rel="stylesheet" href="invoice.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .invoice-box {
+      max-width: 800px;
+      margin: auto;
+      border: 1px solid #eee;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .customer-info, .product-table, .total {
+      margin-top: 20px;
+    }
+
+    .product-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .product-table th, .product-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .total {
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .thank-you {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 1.2em;
+    }
+
+    .print-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .print-btn:hover {
+      background: #444;
+    }
+
+    #img{
+        size: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="invoice-box">
+    <h1>UrbanGlam</h1>
+    <h2>Invoice</h2>
+
+    <div class="customer-info" id="customer-info"></div>
+
+    <div class="product-table">
+        <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <!-- <th>Image</th> -->
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="product-list"></tbody>
+          </table>   
+    </div>
+
+    <div class="total" id="total-amount">
+      Total: $0.00
+    </div>
+
+    <div class="thank-you">Thank you for shopping with us!</div>
+
+  </div>
+  <!-- invoice.html -->
+<script src="invoice.js"></script>
+</body>
+</html>
